@@ -1,4 +1,4 @@
-package com.usp3.security;
+package com.usp3.security.entity;
 
 import com.usp3.platform.BaseEntity;
 import jakarta.persistence.*;
