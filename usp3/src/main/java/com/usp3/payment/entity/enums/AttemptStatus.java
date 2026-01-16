@@ -1,4 +1,4 @@
-package com.usp3.payment.domain.enums;
+package com.usp3.payment.entity.enums;
 
 public enum AttemptStatus {
     INITIATED,

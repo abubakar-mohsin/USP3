@@ -19,7 +19,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated() // Everything must be checked
             )
             // Add your custom bouncer (Filter) before the default Spring check
-            .addFilterBefore(new ApiKeyAuthenticationFilter(apiKeyService), 
+            .addFilterAt(new ApiKeyAuthenticationFilter(apiKeyService), 
                              UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
